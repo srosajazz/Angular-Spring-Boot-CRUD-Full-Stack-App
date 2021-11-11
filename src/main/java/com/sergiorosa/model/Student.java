@@ -26,7 +26,7 @@ public class Student {
 	private String emailId;
 	
 	@Column(name = "rating_number")
-	private Double ratingNumber;
+	private Integer ratingNumber;
 	
 	@Column(name = "id_number")
 	private int idNumber;
@@ -37,7 +37,7 @@ public class Student {
 	public Student() {};
 	
 	
-	public Student(String firstName, String lastName, String emailId, int idNumber, Double ratingNumber,
+	public Student(String firstName, String lastName, String emailId, int idNumber, Integer ratingNumber,
 			int currentSemester) {
 		super();
 		this.firstName = firstName;
@@ -77,10 +77,10 @@ public class Student {
 	public void setIdNumber(int idNumber) {
 		this.idNumber = idNumber;
 	}
-	public Double getRatingNumber() {
+	public Integer getRatingNumber() {
 		return ratingNumber;
 	}
-	public void setRatingNumber(Double ratingNumber) {
+	public void setRatingNumber(Integer ratingNumber) {
 		this.ratingNumber = ratingNumber;
 	}
 	public int getCurrentSemester() {
